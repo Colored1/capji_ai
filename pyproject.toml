@@ -1,0 +1,25 @@
+[project]
+name = "capji-ai"
+version = "1.0.0"
+description = "CAPJI AI - Gemini + Ollama + Claude chat"
+requires-python = ">=3.10"
+dependencies = [
+  "flet",
+]
+
+[tool.flet]
+org = "com.capji"
+product = "CAPJI AI"
+company = "CAPJI"
+copyright = "Copyright (C) 2026 CAPJI"
+
+[tool.flet.app]
+path = "."
+module = "main"
+
+[tool.flet.splash]
+color = "#FEFEFE"
+dark_color = "#FEFEFE"
+
+[tool.flet.android.permission]
+"android.permission.INTERNET" = true

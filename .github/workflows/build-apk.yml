@@ -20,7 +20,9 @@ jobs:
       - name: Install Flet
         run: pip install flet flet-cli
       - name: Build APK
-        run: flet build apk --verbose
+        run: |
+          set +o pipefail
+          yes | flet build apk --verbose
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
